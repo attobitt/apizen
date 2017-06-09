@@ -5,9 +5,7 @@ body {
   color: #4A148C;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  height: inherit;
-  overflow-x: hidden; }
+  text-align: center; }
   body .container {
     width: 100%; }
     body .container .header {
@@ -61,7 +59,7 @@ body {
     display: block;
     width: 100%;
     min-height: 100vh;
-    overflow: visible;
+    overflow: hidden;
     position: relative; }
     body .section .section-container {
       position: absolute;
@@ -77,56 +75,22 @@ body {
         margin: 0 10%; } }
     body .section .section-item {
       width: 100%;
-      float: left;
       font-size: 2em;
       font-weight: bolder;
       color: #fff;
-      overflow: hidden;
-      text-align: left; }
+      overflow: hidden; }
       body .section .section-item img {
         border-radius: 5px;
         overflow: hidden;
         width: 100%;
         margin-top: 2em;
         max-height: 10em; }
-    body .section .banner {
-      padding-top: 10vh;
-      margin-top: 10vh; }
-      body .section .banner .phrases {
-        font-size: 0.5em;
-        font-weight: lighter; }
-  body .section-pages {
-    width: 105em;
-    height: 20em;
-    z-index: 3000;
-    float: left;
-    text-align: right;
-    transform: translate(-10em, -12em) rotate(-5deg); }
-    body .section-pages .page1, body .section-pages .page2, body .section-pages .page3, body .section-pages .page4, body .section-pages .page5, body .section-pages .page6 {
-      z-index: 2000;
-      display: inline-block;
-      float: right;
-      content: "";
-      background-color: #fafafa;
-      border-radius: 5px;
-      margin-right: 5em;
-      margin-top: 5em; }
-    body .section-pages .page1, body .section-pages .page2 {
-      width: 25em;
-      height: 15em; }
-    body .section-pages .page3 {
-      clear: right;
-      width: 25em;
-      height: 28em; }
-    body .section-pages .page4 {
-      width: 25em;
-      height: 23em; }
-    body .section-pages .page5 {
-      width: 20em;
-      height: 20em; }
-    body .section-pages .page6 {
-      width: 15em;
-      height: 20em; }
+  body .section-item .pages .page1, body .section-item .pages .page2 {
+    display: block;
+    content: "";
+    width: 20%;
+    height: 10em;
+    background-color: white; }
   body .section-title {
     margin-top: 2em;
     font-size: 2em;
