@@ -7,6 +7,10 @@ body {
     overflow-x: hidden;
     @include body-font;
     // background-color: #FFF59D;
+
+      background-image: url('../img/layout/background.jpg')!important;
+      background-repeat: repeat-y;
+      background-size: contain;
 }
 // .main-container {
 //   width: 100%;
@@ -104,13 +108,24 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1200px;
   }
 }
+.navbar {
+  border: 0px solid white!important;
+  height: 2em!important;
+}
 .navbar-custom {
     // background-color: $light;
     border-color: transparent;
-    // background-image: url('../img/body-bg.jpg')!important;
+    background-image: url('../img/layout/menu-bar.jpg')!important;
+    background-repeat: no-repeat;
+    background-size: cover;
     .navbar-brand {
+      z-index: 200;
+      margin-top: .4em;
       padding: .5em;
-        color: $theme-primary;
+      color: $theme-primary;
+      background-image: url('../img/layout/logoapizen.png');
+      background-size: contain;
+      background-repeat: no-repeat;
         @include script-font;
         &:hover,
         &:focus,
@@ -119,13 +134,15 @@ h1, h2, h3, h4, h5, h6 {
             color: darken($theme-primary, 10%);
         }
         img {
-          width: 8em;
+          // background-size: ;
+          width: 5.8em;
         }
     }
     .navbar-collapse {
         border-color: fade-out(white, .02);
     }
     .navbar-toggle {
+      // margin: 0!important;
         background-color: $theme-primary;
         border-color: $theme-primary;
         @include heading-font;
@@ -141,8 +158,9 @@ h1, h2, h3, h4, h5, h6 {
             a {
                 @include heading-font;
                 font-weight: bolder;
+                font-size: .85em;
                 letter-spacing: 1px;
-                color: #444;
+                color: #fff;
                 padding: 15px 10px;
                 &:hover,
                 &:focus {
@@ -154,25 +172,27 @@ h1, h2, h3, h4, h5, h6 {
     }
     .navbar-nav>.active>a {
         border-radius: 0;
-        color: white;
-        background-color: $theme-primary;
+        color: $theme-primary;
+        background-color: rgba(0, 0, 0, 0);
     }
     .navbar-nav>.active>a:hover,
     .navbar-nav>.active>a:focus {
-        color: white;
-        background-color: darken($theme-primary, 10%);
+        color: $theme-primary;
+        background-color: rgba(0, 0, 0, 0);
+        // background-color: darken($theme-primary, 10%);
     }
 }
 
 @media(min-width:768px) {
     .navbar-custom {
         background-color: $light;
-        padding: .5em 0;
+        padding: 0;
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
         border: none;
         .navbar-brand {
+          margin-top: 0!important;
           padding: 0;
             font-size: 2em;
             -webkit-transition: all 0.3s;
@@ -197,10 +217,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    background-image: url('../img/header-bg.jpg');
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
+  img {
+    width: 100%;
+  }
+    // background-image: url('../img/layout/Apident_Slider1.jpg');
+    // background-repeat: no-repeat;
+    // background-attachment: scroll;
+    // background-position: center center;
     @include background-cover;
     text-align: center;
     color: white;
@@ -248,13 +271,16 @@ header {
 }
 
 // Global Section Styles
-
+.sections {
+}
 section {
+  // background: image
     padding: 10px 0;
     h2.section-heading {
         font-size: 28px;
         margin-top: 20px;
         margin-bottom: 15px;
+        color: #92288f;
     }
     h3.section-subheading {
         font-size: 16px;
@@ -280,14 +306,17 @@ section {
 .service-heading {
     margin: 15px 0;
     text-transform: none;
+    color: #92288f;
 }
 
 // catalog Section
 
 #catalog {
+  background-color: #f7f2f9;
     .catalog-item {
         margin: 0 0 15px;
         right: 0;
+        position: relative;
         .catalog-link {
             display: block;
             position: relative;
@@ -327,9 +356,14 @@ section {
         .catalog-caption {
             max-width: 400px;
             margin: 0 auto;
-            background-color: white;
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
             text-align: center;
-            padding: 25px;
+            // padding: 25px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
             h4 {
                 text-transform: none;
                 margin: 0;
@@ -339,6 +373,7 @@ section {
                 font-style: italic;
                 font-size: 16px;
                 margin: 0;
+                color: orange;
             }
         }
     }
@@ -409,7 +444,7 @@ section {
             height: 90px;
             position: absolute;
             z-index: 100;
-            background-color: $theme-primary;
+            // background-color: $theme-primary;
             color: white;
             border-radius: 100%;
             border: 7px solid #f1f1f1;
@@ -443,8 +478,10 @@ section {
     }
     .timeline-heading {
         h4 {
+            color: #92288f;
             margin-top: 0;
-            color: inherit;
+            font-size: 1.5em;
+            // color: inherit;
             &.subheading {
                 text-transform: none;
             }
@@ -482,6 +519,10 @@ section {
                     margin-top: 16px;
                     line-height: 18px;
                 }
+            }
+            .let-us-help {
+              background-image: url('../img/treatments/8-icon-permitenos-text.png');
+              background-size: contain;
             }
             &.timeline-inverted > .timeline-panel {
                 float: right;
@@ -547,7 +588,7 @@ section {
       max-width: 200px;
       max-height: 200px;
         margin: 0 auto;
-        border: 7px solid white;
+        // border: 7px solid white;
     }
     h4 {
         margin-top: 25px;
@@ -570,12 +611,29 @@ aside.partners {
 // Contact Section
 
 section#contact {
-    background-color: $gray-darker;
-    background-image: url('../img/map-image.png');
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #92288f;
+    // background-image: url('../img/map-image.png');
+    // background-position: center;
+    // background-repeat: no-repeat;
     .section-heading {
+        color: #92288f;
+    }
+    .row {
+
+      background-color: #92288f!important;
+    }
+    footer {
+      height: inherit;
+      background-color: #92288f!important;
+      h5 {
+        color: orange;
+      }
+      p {
         color: white;
+      }
+      i {
+        font-size: 1.6em;
+      }
     }
     .form-group {
         margin-bottom: 25px;
@@ -622,9 +680,13 @@ section#contact {
 // Footer
 
 footer {
-    padding: 25px 0;
+  padding: 25px 0;
     text-align: center;
+    .container {
+
+    }
     span.copyright {
+      color: white;
         line-height: 40px;
         @include heading-font;
         text-transform: none;
@@ -637,6 +699,18 @@ footer {
     }
 }
 
+.footer {
+  background-color: #212121;
+  ul.social-buttons {
+      li {
+          a {
+              background-color: #fff;
+              color: #92288f;
+              font-weight: bold;
+            }
+          }
+        }
+}
 // Social Buttons
 
 ul.social-buttons {
@@ -644,7 +718,7 @@ ul.social-buttons {
     li {
         a {
             display: block;
-            background-color: $gray-darker;
+            background-color: #92288f;
             height: 40px;
             width: 40px;
             border-radius: 100%;
