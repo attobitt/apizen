@@ -407,7 +407,7 @@ section {
         margin-left: -1.5px;
     }
     > li {
-        margin-bottom: 50px;
+        margin-bottom: 10px;
         position: relative;
         min-height: 50px;
         &:before,
@@ -419,6 +419,7 @@ section {
             clear: both;
         }
         .timeline-panel {
+          // background-color: red;
             width: 100%;
             float: right;
             padding: 0 20px 0 100px;
@@ -455,6 +456,9 @@ section {
                 line-height: 14px;
             }
         }
+        .timeline-picture {
+          display: none;
+          }
         &.timeline-inverted > .timeline-panel {
             float: right;
             text-align: left;
@@ -501,12 +505,12 @@ section {
             left: 50%;
         }
         > li {
-            margin-bottom: 100px;
+            margin-bottom: 40px;
             min-height: 100px;
             .timeline-panel {
                 width: 41%;
                 float: left;
-                padding: 0 20px 20px 30px;
+                padding: 20px 20px 20px 30px;
                 text-align: right;
             }
             .timeline-image {
@@ -519,6 +523,14 @@ section {
                     margin-top: 16px;
                     line-height: 18px;
                 }
+            }
+            .timeline-picture {
+              display: block;
+              float: right;
+              width: 41%;
+              img {
+                height: 140px;
+              }
             }
             .let-us-help {
               background-image: url('../img/treatments/8-icon-permitenos-text.png');
@@ -538,7 +550,7 @@ section {
         > li {
             min-height: 150px;
             .timeline-panel {
-                padding: 0 20px 20px;
+                padding: 20px 20px 20px;
             }
             .timeline-image {
                 width: 170px;
@@ -550,8 +562,13 @@ section {
                     line-height: 26px;
                 }
             }
+            .timeline-picture {
+              img {
+                height: 170px;
+              }
+            }
             &.timeline-inverted > .timeline-panel {
-                padding: 0 20px 20px;
+                padding: 20px 20px 20px;
             }
         }
     }
@@ -571,6 +588,11 @@ section {
                 h4 {
                     margin-top: 40px;
                 }
+            }
+            .timeline-picture {
+              img {
+                height: 190px;
+              }
             }
             &.timeline-inverted > .timeline-panel {
                 padding: 0 100px 20px 20px;
