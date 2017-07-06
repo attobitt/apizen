@@ -462,7 +462,7 @@ section {
         .timeline-picture {
           display: none;
           }
-        &.timeline-inverted > .timeline-picture {
+        .timeline-picture-left {
             display: none;
           }
         &.timeline-inverted > .timeline-panel {
@@ -538,7 +538,7 @@ section {
                 height: 140px;
               }
             }
-          &.timeline-inverted > .timeline-picture {
+          .timeline-picture-left {
               display: block;
               float: left;
               width: 50%;
@@ -579,9 +579,7 @@ section {
                 height: 170px;
               }
             }
-            &.timeline-inverted > .timeline-picture {
-                display: block;
-                float: left;
+            .timeline-picture-left {
                 width: 43%;
                 margin-left: 2%;
                 img {
@@ -610,9 +608,7 @@ section {
                     margin-top: 40px;
                 }
             }
-            &.timeline-inverted > .timeline-picture {
-              display: block;
-              float: left;
+            .timeline-picture-left {
               width: 45%;
               margin-left: 5%;
               img {
