@@ -325,7 +325,6 @@ section {
           #catalog .catalog-item .catalog-link .catalog-hover .catalog-hover-content h4 {
             margin: 0; }
     #catalog .catalog-item .catalog-caption {
-      max-width: 400px;
       margin: 0 auto;
       background-color: transparent;
       color: white;
@@ -366,7 +365,7 @@ section {
   .timeline > li {
     margin-bottom: 10px;
     position: relative;
-    min-height: 50px; }
+    min-height: 100px; }
     .timeline > li:before, .timeline > li:after {
       content: " ";
       display: table; }
@@ -403,7 +402,12 @@ section {
         font-size: 10px;
         margin-top: 12px;
         line-height: 14px; }
+    .timeline > li .let-us-help {
+      background-image: url("../img/treatments/8-icon-permitenos-text.png");
+      background-size: contain; }
     .timeline > li .timeline-picture {
+      display: none; }
+    .timeline > li.timeline-inverted > .timeline-picture {
       display: none; }
     .timeline > li.timeline-inverted > .timeline-panel {
       float: right;
@@ -457,9 +461,13 @@ section {
       width: 41%; }
       .timeline > li .timeline-picture img {
         height: 140px; }
-    .timeline > li .let-us-help {
-      background-image: url("../img/treatments/8-icon-permitenos-text.png");
-      background-size: contain; }
+    .timeline > li.timeline-inverted > .timeline-picture {
+      display: block;
+      float: left;
+      width: 50%;
+      margin-left: 2%; }
+      .timeline > li.timeline-inverted > .timeline-picture img {
+        height: 140px; }
     .timeline > li.timeline-inverted > .timeline-panel {
       float: right;
       text-align: left;
@@ -478,8 +486,17 @@ section {
         font-size: 18px;
         margin-top: 30px;
         line-height: 26px; }
-    .timeline > li .timeline-picture img {
-      height: 170px; }
+    .timeline > li .timeline-picture {
+      width: 43%; }
+      .timeline > li .timeline-picture img {
+        height: 170px; }
+    .timeline > li.timeline-inverted > .timeline-picture {
+      display: block;
+      float: left;
+      width: 43%;
+      margin-left: 2%; }
+      .timeline > li.timeline-inverted > .timeline-picture img {
+        height: 170px; }
     .timeline > li.timeline-inverted > .timeline-panel {
       padding: 20px 20px 20px; } }
 
@@ -487,17 +504,24 @@ section {
   .timeline > li {
     min-height: 170px; }
     .timeline > li .timeline-panel {
-      padding: 0 20px 20px 100px; }
+      padding: 40px 20px 20px 100px; }
     .timeline > li .timeline-image {
       width: 190px;
       height: 190px;
       margin-left: -85px; }
       .timeline > li .timeline-image h4 {
         margin-top: 40px; }
+    .timeline > li.timeline-inverted > .timeline-picture {
+      display: block;
+      float: left;
+      width: 45%;
+      margin-left: 5%; }
+      .timeline > li.timeline-inverted > .timeline-picture img {
+        height: 190px; }
     .timeline > li .timeline-picture img {
       height: 190px; }
     .timeline > li.timeline-inverted > .timeline-panel {
-      padding: 0 100px 20px 20px; } }
+      padding: 40 100px 20px 20px; } }
 
 .team-member {
   text-align: center;
