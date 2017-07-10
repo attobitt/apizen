@@ -15,7 +15,7 @@
   // Highlight the top nav as scrolling occurs
   $('body').scrollspy({
     target: '.navbar-fixed-top',
-    offset: 50
+    offset: 40
   });
 
   // Closes the Responsive Menu on Menu Item Click
@@ -24,11 +24,11 @@
   });
 
   // Offset for Main Navigation
-  $('#mainNav').affix({
-    offset: {
-      top: 40
-    }
-  })
+  // $('#mainNav').affix({
+  //   offset: {
+  //     top: 40
+  //   }
+  // })
 
   $('.slider').sss({
     slideShow: true, // Set to false to prevent SSS from automatically animating.
