@@ -166,7 +166,8 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-custom .navbar-brand img {
       width: 5.8em; }
   .navbar-custom .navbar-collapse {
-    border-color: rgba(255, 255, 255, 0.98); }
+    background-color: #212121;
+    transform: translateY(-1em); }
   .navbar-custom .navbar-toggle {
     background-color: #fed136;
     border-color: #fed136;
@@ -212,7 +213,10 @@ h1, h2, h3, h4, h5, h6 {
       -moz-transition: all 0.3s;
       transition: all 0.3s; }
     .navbar-custom .navbar-nav > .active > a {
-      border-radius: 3px; } }
+      border-radius: 3px; }
+    .navbar-custom .navbar-collapse {
+      background-color: transparent;
+      transform: translateY(0); } }
 
 @media (min-width: 768px) {
   .navbar-custom.affix {

@@ -141,7 +141,9 @@ h1, h2, h3, h4, h5, h6 {
         }
     }
     .navbar-collapse {
-        border-color: fade-out(white, .02);
+        // border-color: fade-out(white, .02);
+        background-color: #212121;
+        transform: translateY(-1em);
     }
     .navbar-toggle {
       // margin: 0!important;
@@ -203,6 +205,10 @@ h1, h2, h3, h4, h5, h6 {
         }
         .navbar-nav>.active>a {
             border-radius: 3px;
+        }
+        .navbar-collapse {
+          background-color: transparent;
+          transform: translateY(0);
         }
     }
 }
