@@ -233,6 +233,7 @@ header {
   text-align: center;
   color: white; }
   header .static-slider {
+    display: none;
     width: 100%;
     height: 100%; }
     header .static-slider img {

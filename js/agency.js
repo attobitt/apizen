@@ -38,7 +38,7 @@
     showNav: true // Set to false to hide navigation arrows.
   });
 
-  $('.static-slider').hide();
+  // $('.static-slider').hide();
 
   $(window).scroll(function() {
     if ($(window).scrollTop() < 150) {
