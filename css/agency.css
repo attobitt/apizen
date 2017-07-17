@@ -232,17 +232,10 @@ header {
   -o-background-size: cover;
   text-align: center;
   color: white; }
-  header .static-slider {
-    display: none;
-    width: 100%;
-    height: 100%; }
-    header .static-slider img {
-      width: 100%; }
-  header .slider {
-    width: 100%;
-    height: 100%; }
-    header .slider img {
-      width: 100%; }
+  header .bx-controls {
+    display: none; }
+  header .bxslider img {
+    width: 100%; }
   header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px; }

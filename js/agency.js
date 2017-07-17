@@ -30,15 +30,21 @@
   //   }
   // })
 
-  $('.slider').sss({
-    slideShow: true, // Set to false to prevent SSS from automatically animating.
-    startOn: 0, // Slide to display first. Uses array notation (0 = first slide).
-    transition: 500, // Length (in milliseconds) of the fade transition.
-    speed: 3500, // Slideshow speed in milliseconds.
-    showNav: true // Set to false to hide navigation arrows.
-  });
+  // $('.slider').sss({
+  //   slideShow: true, // Set to false to prevent SSS from automatically animating.
+  //   startOn: 0, // Slide to display first. Uses array notation (0 = first slide).
+  //   transition: 500, // Length (in milliseconds) of the fade transition.
+  //   speed: 3500, // Slideshow speed in milliseconds.
+  //   showNav: true // Set to false to hide navigation arrows.
+  // });
 
   // $('.static-slider').hide();
+  $(document).ready(function(){
+    $('.bxslider').bxSlider({
+      auto: true,
+      // autoControls: true
+    });
+  });
 
   $(window).scroll(function() {
     if ($(window).scrollTop() < 150) {
@@ -46,7 +52,6 @@
       console.log("at the top");
       $('.static-slider').hide();
       $('.slider').show();
-
     } else {
       //  $("#header-2").hide();
       console.log("not top");
